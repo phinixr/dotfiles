@@ -1,0 +1,202 @@
+@import url("/home/phinixr/.cache/wal/colors-waybar.css");
+
+* {
+    font-family: 'Radio Canada Big', sans-serif;
+    font-weight: Bold;
+    font-size: 15px;
+    border-radius: 9px;
+    padding: 0px 0px 0px 0px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: @color7;
+}
+
+#workspaces button.active {
+    color: white;
+    padding-right:0px;
+    outline: none;
+    border:none;
+    box-shadow: none;
+
+} 
+#workspaces {
+    background-color: @background;
+    padding-left:4px;
+    padding-bottom:0px;
+
+}
+#workspaces *:hover{
+    background: transparent;
+    outline: none;
+    border:none;
+    box-shadow: none;
+    
+}
+#battery,
+#pulseaudio,
+#backlight,
+#custom-weather {
+    color: @color5; /* color5 */
+    background-color: @background; /* background */
+    margin: 0 15px 0 0px;
+    padding: 0 15px 0 15px; /* top, right, bottom, left */
+}
+#battery{
+    color: @color5; /* color5 */
+    padding: 0px 9px 0px 9px;
+    margin: 0px 7px 0px 7px;
+}
+#network {
+    color: @color2; /* color2 */
+    background-color: @background; /* background */
+    margin: 0 0px 0 0px;
+    padding: 0 10px 0 10px; /* top, right, bottom, left */
+}
+#clock {
+    color: @color3; /* color3 */
+    background-color: @background; /* background */
+    margin: 0px 8px 0px 8px;
+    padding: 0px 9px 0px 9px;
+}
+
+#network {
+    color: @color4; /* color4 */
+}
+
+#pulseaudio {
+    color: @color5; /* color5 */
+    padding: 0px 9px 0px 9px;
+    margin: 0px 7px 0px 7px;
+}
+#custom-wallpaper{
+    color: white;
+    background-color: @background;
+    padding: 0px 7px 0px 11px;
+    margin: 0px 0px 0px 7px;
+}
+#custom-wallpaper:hover{
+    color: white;
+    background-color: @color4;
+    padding: 0px 7px 0px 11px;
+    margin: 0px 0px 0px 7px;
+}
+#backlight {
+    color: rgb(255,214,10); /* color5 */
+    padding: 0px 10px 0px 5px;
+    margin: 0px 0px 0px 10px;
+}
+#custom-weather {
+    font-size: 14;
+    color: @color4; /* color2 */
+    background-color: @background; /* background */
+    margin: 0px 8px 0px 0px;
+    padding: 0px 9px 0px 9px /* top, right, bottom, left */
+}
+@keyframes colorCycle {
+    0%   { color: @color1; }
+    6.25% { color: @color2;}
+    12.5% { color: @color3; }
+    18.75% { color: @color4;}
+    25%  { color: @color5;}
+    31.25% { color: @color6;}
+    37.5% { color: @color7;}
+    43.75% { color: @color8;}
+    50%  { color: @color9;}
+    56.25% { color: @color10;}
+    62.5% { color: @color11;}
+    68.75% { color: @color12; }
+    75%  { color: @color13 ;}
+    81.25% { color: @color14; }
+    87.5% { color: @color15;}
+    93.75% { color: @color8; }
+    100% { color: @color1; }
+}
+#custom-cava_way{
+    animation: colorCycle 3s infinite linear;
+    background-color: @background;
+    padding: 0px 7px 0px 7px;
+    
+}
+
+#custom-media {
+    color: @color4; /* color2 */
+    background-color: @background; /* background */
+    margin: 0px 8px 0px 0px;
+    padding: 0 15px 1px 10px; /* top, right, bottom, left */
+}
+#custom-power-menu {
+    color: white;
+    font-weight: bolder;
+    background-color: @background;
+    padding: 0px 7px 0px 12px;
+    margin: 0px 10px 0px 0px;
+    
+}
+#custom-power-menu:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(255,69,58);
+    padding: 0px 7px 0px 12px;
+    margin: 0px 10px 0px 0px;
+}
+#battery.charging { 
+    color: rgb(52,204,0);
+    background-color: @background; /* background */
+    padding: 0px 6px 0px 5px;
+    margin: 0px 7px 0px 7px; /* top, right, bottom, left */
+  }
+#battery.critical{
+    color: rgb(255,69,58);
+    background-color: @background; /* background */
+    padding: 0px 10px 0px 10px;
+    margin: 0px 7px 0px 7px;/* top, right, bottom, left */
+}
+#battery.warning{
+    color: rgb(255,159,10);
+    background-color: @background; /* background */
+    padding: 0px 10px 0px 10px;
+    margin: 0px 7px 0px 7px; /* top, right, bottom, left */
+}
+#taskbar {
+    background-color: transparent;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    box-shadow:none;
+}
+
+#taskbar * {
+    transition: all 0.1s linear;
+}
+#taskbar *:hover {
+    background: black;
+    border-style:none;
+    box-shadow: none;
+}
+#pulseaudio.muted{
+    color: @color5; /* color5 */
+    background-color: @background; /* background */
+    margin: 0 7px 0 7px;
+    padding: 0 15px 0 13px; /* top, right, bottom, left */
+}
+/* notification */
+#custom-notification {
+    color: white;
+    font-weight: bolder;
+    background-color: @background;
+    padding: 0px 12px 0px 5px;
+    margin: 0px 7px 0px 0px;
+    
+}
+#custom-notification:hover {
+    color: white;
+    font-weight: bolder;
+    background-color: @color5;
+    padding: 0px 12px 0px 5px;
+    margin: 0px 7px 0px 0px;
+}
+#custom-notification.notification{
+    padding: 0px 12px 0px 10px;
+    margin: 0px 7px 0px 0px;
+}

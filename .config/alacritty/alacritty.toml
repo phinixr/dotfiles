@@ -1,0 +1,25 @@
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+shape = "Block"
+
+[env]
+TERM = "alacritty"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+dynamic_title = true
+
+[window.padding]
+x = 25
+y = 25
+
+[general]
+live_config_reload = true
+import = ["/home/phinixr/.cache/wal/colors-alacritty.toml", "/home/phinixr/.config/alacritty/fonts.toml"]
+
+[terminal.shell]
+program = "/sbin/zsh"
+args = ["--login"]

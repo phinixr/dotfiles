@@ -1,0 +1,9 @@
+@import "/home/phinixr/.cache/wal/colors-waybar.css";
+@define-color @foreground;
+@define-color @background;
+@define-color @color1;
+@define-color @color2;
+@define-color @color5;
+@define-color @color4;
+@import 'notifications.css';
+@import 'central_control.css';

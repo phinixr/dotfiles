@@ -1,0 +1,85 @@
+@import url("/home/phinixr/.cache/wal/colors-waybar.css");
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(0,0,0,0.85);
+	border-width:1px;
+}
+
+button {
+    border-radius: 0;
+	border-style:none;
+	text-decoration-color: #FFFFFF;
+    color: #FFFFFF;
+	background-color: #1E1E1E;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+}
+button {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 10%;
+	background-color: @color0;
+	transition: all 0.3s ease-in, color 1s ease-in;
+	box-shadow: 0 0 10px 2px transparent;
+	border-radius: 36px;
+	margin: 10px;
+	padding: 10px;
+	min-width: 110px;
+  }
+button:focus {
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+	background-size: 70%;
+	background-color: @color2;
+	background-size: 85%; /* Zoom effect */
+    transition: background-size 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  }
+button:hover {
+	transition: all 0.2s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in, color 0.1s ease-in;
+	background-size: 75%;
+	box-shadow: 0 0 20px 10px rgba(0, 0, 0, .4);
+	background-color: @color1;
+	color: rgba(0,0,0,0);
+	text-shadow:none;
+	padding: 100px;
+  }
+button:hover * {
+    color: rgba(0, 0, 0, 0); /* Hides text inside button */
+}
+
+
+#lock {
+    background-image: image(url("./icons/lock.svg"));
+	background-size: 60%;
+}
+
+#logout {
+    background-image: image(url("./icons/logout.svg"));
+	background-size: 55%;
+	background-position: 42% center;
+}
+
+#suspend {
+    background-image: image(url("./icons/suspend.svg"));
+	background-size: 60%;
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.svg"));
+	background-size: 50%;
+}
+
+#shutdown {
+    background-image: image(url("./icons/shutdown.svg"));
+	background-size: 60%;
+}
+
+#reboot {
+    background-image: image(url("./icons/reboot.svg"));
+	background-size: 50%;
+}
